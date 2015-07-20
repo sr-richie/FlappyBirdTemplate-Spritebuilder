@@ -8,6 +8,7 @@
 {
     // your code here
     [self addObstacle];
+    NSLog(@"DOING IT");
 }
 
 -(void)update:(CCTime)delta
