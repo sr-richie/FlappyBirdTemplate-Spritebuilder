@@ -7,15 +7,19 @@
 - (void)initialize
 {
     // your code here
+    character = (Character *) [CCBReader load:@"Character"];
+    [physicsNode addChild:character];
+    
+    timeSinceObstacle = 0.0f;
     [self addObstacle];
+    
     NSLog(@"DOING IT");
 }
 
 -(void)update:(CCTime)delta
 {
     // put update code here
-    character = (Character *) [CCBReader load:@"Character"];
-    [physicsNode addChild:character];
+    
 }
 
 // put new methods here
